@@ -1,2 +1,6 @@
 my name is manohar
+
 merge conflict will occour here
+
+content added for merge conflict
+
