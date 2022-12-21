@@ -1,0 +1,6 @@
+my name is manohar
+<<<<<<< HEAD
+merge conflict will occour here
+=======
+content added for merge conflict
+>>>>>>> 1d69d2fede91377e09b596377022608037a93726
