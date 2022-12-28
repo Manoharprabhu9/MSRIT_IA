@@ -1,0 +1,220 @@
+<html>
+	
+	<!-- images are not mine, have been used from the Pusheen website as inspiration for this FCC challenge of making a product landing page -->
+
+	<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+	<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="freeCodeCamp Product Landing Page">
+    <link rel="stylesheet" href="styles.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+		</head>
+	
+	<body>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Varela Round', sans-serif;
+}
+
+body {
+	background-color: #F1E7DC;
+}
+
+li, a, button {
+	font-family: 'Varela Round', sans-serif;
+	font-weight: 400;
+	font-size: 20px;
+	color: #512927;
+	text-decoration: none;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 5px 30px;
+	position: fixed;
+	width: 100%;
+	background-color: #D5C5BE;
+}
+
+.logo {
+	cursor: pointer;
+  max-width: 300px;
+}
+
+.nav-links {
+	list-style: none;
+}
+
+.nav-links li {
+	display: inline-block;
+	padding: 0px 20px;
+}
+
+.nav-links li a {
+	transition: all 0.3s ease 0s;
+}
+
+.nav-links li a:hover {
+	color: #F0BEC1;
+}
+
+.button {
+	width: 300px;
+}
+
+button {
+	padding: 9px 25px;
+	background-color: rgba(240, 190, 193, 1);
+	border: none;
+	border-radius: 50px;
+	cursor: pointer;
+	transition: all 0.3s ease 0s;
+}
+
+button:hover {
+	background-color: rgba(240, 190, 193, 0.8);
+}
+
+#email-form {
+	text-align: center;
+}
+
+h1, p, figcaption {
+	color: #512927;
+	padding: 5px;
+	text-align: center;
+}
+
+#form input[type='email'] {
+    max-width: 275px;
+    width: 100%;
+    padding: 5px;
+		border-style: solid;
+		background-color: #F1E7DC;
+		border-radius: 100px;
+}
+
+#form input[type='submit'] {
+    max-width: 150px;
+    width: 100px;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #CBDFD6;
+		border-radius: 100px;
+		color: #512927;
+}
+
+#email-form {
+	padding-top: 200px;
+}
+
+.grid-container-shop {
+	display: flex;
+	justify-content: center;	
+	margin: 70px;
+}
+
+.grid-container-shop > div {
+	width: 20vw;
+  margin: 10px;
+}
+
+figcaption {
+	font-size: 16px;
+	margin: 10px;
+	color: #512927;
+}
+
+img {max-width:100%}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+  text-align: center;
+  padding: 15px;
+  background-color: #F0BEC1;
+}
+
+#latest-video {
+	margin-left: 25vw;
+	margin-right: 25vw;
+	padding-bottom: 4vw;
+	text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+	}
+
+    </style>
+		<!-- header with logo & nav bar -->
+		<header id="header">
+			<img class="logo" id="header-img" src="https://cdn.shopify.com/s/files/1/2393/5817/files/Pme_pusheen_logo_480x480.png?v=1643105932" alt="pusheen the cat logo">
+			<nav id="nav-bar">
+				<ul class="nav-links">
+					<li><a class="nav-link" href="#emailform">Home</a></li>
+					<li><a class="nav-link" href="#shop">Shop</a></li>
+					<li><a class="nav-link" href="#contact">Contact</a></li>							
+					<a class="cta" href="#"><button>Help</button></a>
+				</ul>
+			</nav>
+			<div class="button">
+			</div>
+		</header>
+		<!-- email subscription service -->
+		<div class="grid-container" id="emailform">
+			<div><h1>join our email listing ✨</h1>
+				<p>stay connected and learn more about our future products</p>
+				<form id="form" action="https://www.freecodecamp.com/email-submit">
+          <input
+            name="email"
+            id="email"
+            type="email"
+            placeholder="Email"
+            required
+          />
+            <input id="submit" type="submit">
+        </form>			
+			</div>
+			
+			<!-- products & prices -->
+			<div class="grid-container-shop column" id="shop">
+				<div class="column"><figure><img src="https://cdn.shopify.com/s/files/1/0057/8182/products/Pusheen_Ice_Cream_Surprise_Plush_004_web_1000x1000.jpg?v=1657916784"/>
+					<figcaption>Pusheen Ice Cream Surprise Plush
+						<p>£0.00</p></figcaption>
+				</figure></div>
+				<div class="column"><figure><img src="https://cdn.shopify.com/s/files/1/0057/8182/products/Hello_Kitty_x_Pusheen_Best_Friend_Donut_Plush_000_web_1000x1000.jpg?v=1663615721"/>
+					<figcaption>Hello Kitty® x Pusheen® Donut Plush
+					<p>£0.00</p></figcaption>
+					</figure></div>
+				<div class="column"><figure><img src="https://cdn.shopify.com/s/files/1/0057/8182/products/Pusheen_Chocolate_Milk_Sips_Plush_000_web_1000x1000.jpg?v=1652309709"/>
+					<figcaption>Pusheen Chocolate Milk Sips Plush
+					<p>£0.00</p></figcaption>
+					</figure></div>
+			</div>	
+			
+			        <section id="latest-video">
+								<h1>• • • • • • • • • • • • • • • • • • • • • • watch our latest video below! • • • • • • • • • • • • • • • • • • • • • •</h1>
+         <iframe id="video" width="1000" height="562.5" src="https://www.youtube.com/embed/OFguKybgU20" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+			
+			<!-- footer -->
+		        <footer class="footer" role="content-info" id="contact">
+  <p>designed by
+  <a href="https://codepen.io/jinfairy"> Suzi</a></p>
+</footer>
+				
+	</body>
+</html>
